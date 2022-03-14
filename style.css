@@ -1,55 +1,120 @@
 * {
+    padding: 0;
     margin: 0;
 }
 
 body {
-    background-image: url(./assets/carne.jpg);
-    background-size: cover;
+    background: linear-gradient(to right, rgb(29, 136, 207), rgb(110, 25, 145));
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 .container {
-    margin: auto;
-    margin-top: 120px;
-    border-radius: 25px;
+    width: 600px;
     padding: 25px;
-    background-color: rgba(214, 214, 214, 0.3);
-    max-width: 400px;
+    margin: auto;
+    margin-top: 80px;
     text-align: center;
+}
+
+.topo {
+    background-color: rgba(194, 194, 194, 0.3);
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 60px;
 }
 
 input {
     display: block;
+    width: 75%;
+    height: 30px;
+    font-size: 17px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    outline: 0;
+    border-style: none;
+    box-shadow: 5px 4px 6px black;
+}
+
+.calcular {
+    width: 120px;
+    padding: 5px;
+    margin-top: 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition-property: width, font-size;
+    transition: 200ms ease-in-out;
+}
+
+.calcular:hover {
+    background-color: rgb(29, 136, 207);
+    color: white;
+    font-size: 25px;
+    width: 150px;
+}
+
+.baixo {
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+th,
+td,
+tr {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.resultado {
+    width: 200px;
+    border-radius: 20px;
     margin: auto;
     margin-top: 25px;
-    border-radius: 20px;
-    border-style: none;
-    width: 80%;
-    height: 25px;
-    text-align: center;
-    outline: 0;
-    box-shadow: 5px 4px 6px black;
-}
-
-button {
-    margin-top: 25px;
-    border-radius: 20px;
-    width: 25%;
-    height: 25px;
-    outline: 0;
-    box-shadow: 5px 4px 6px black;
-}
-
-button:hover {
-    background-color: rgb(202, 202, 202);
-    cursor: pointer;
-}
-
-input:hover {
-    background-color: rgb(202, 202, 202);
+    font-size: 20px;
 }
 
 p {
-    font-size: 20px;
-    margin-top: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+p:last-of-type {
+    text-align: center;
+    width: 90px;
+    padding: 5px;
+    background-color: rgb(120, 200, 247);
+    border-radius: 20px;
+}
+
+@media(max-width:500px) {
+    body {
+        background-color: linear-gradient(to right, rgb(29, 136, 207), rgb(110, 25, 145));
+    }
+    .container {
+        width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    input {
+        width: 100%;
+    }
+    .baixo {
+        width: 95%;
+        font-size: 17px;
+    }
 }
